@@ -5,16 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="css/normalize.css" as="style">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="preload" href="css/styles.css" as="style">
+ 
+  
   <link rel="stylesheet" href="mill.css">
-  <link rel="stylesheet" href="css/Style.css">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/all.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  
   
   <link
   rel="stylesheet"
@@ -59,20 +56,101 @@
       
 </body>
 <div class="bg">
-    <div class="header">
-        <img src="1451105803109.png">
-    </div>
+    
     <div class="section-1">
-        <h1 class="section-heading">THE MILLENIUM</h1>
+        <h1 class="section-heading"></h1>
     </div>
     
         
 </div>
-<main>
-    <section id="galeria">
-        <div class="projects">
+
+<main><section id="about" >
+  
+    
+  <div class=blog
+  >   
+                
+  <div class="page-wrapper">
+    <div class="content clearfix">
+      <div class="main-content-wrapper">
+        <div class="main-content single">
+          <section class="section">
             <div class="title" style="margin: 0;">
-                <h2>HIGH<span>LIGHTS</span></h2>
+              <h2>ABOUT US</h2>
+            
+              <p>
+                  MILL
+              </p>
+              <p>
+                RESIDENTIAL | COMMERCIAL | INDUSTRIAL 
+              </p>
+            </div>
+      
+            <div class="about-center ">
+              <article class="about-img">
+                <img src="images\hero-bcg.png" alt="" />
+              </article>
+              <article class="about">
+                <!-- btn container -->
+               
+                <div class="about-content">
+                  <!-- single item -->
+                 
+                    <h4></h4>
+                    <p>
+                      Since 2001, Powerchip Technologies India Pvt ltd (PCT) has been committed to providing high quality  security system solutions and most importantly, personalized service to its residential, commercial &  Industrial Customers. 
+                    </p>
+                    <p>
+                      With over 1,500 professional installations, PCT has necessary expertise and resources available to design,  install, and maintain customized solutions for protecting families, homes, and businesses.
+                    </p>
+                  </div>
+                  <div class="con" id="goals">
+                    <h4>Mission</h4>
+                    <p>
+                      PCT offers a wide array of security products including complete security systems solutions, including CCTV,  video monitoring, access control, fire detection, perimeter boundary sensors and more. In addition, we are  experts in fully integrated solutions for residential and business applications. 
+      
+                    </p>
+                    <p>
+                      At PCT, we understand the importance of installing quality products and providing exemplary customer  service. That is precisely why we are a leader in security system installations in South India and have a  proven track record of complete Customer satisfaction. 
+                    </p>
+                    <p>
+                      Collective experience and exposure to various business streams and operations is the core strength of the  PCT Management team. This solid foundation is the right pedestal for many tall achievements in the years to  come. 
+                    </p>
+                  </div>
+                  <!-- end of single item -->
+                </div>
+              </article>
+            </div>
+            <script>
+              const about = document.querySelector(".about");
+const btns = document.querySelectorAll(".tab-btn");
+const articles = document.querySelectorAll(".con");
+about.addEventListener("click",function(e){
+    
+    const id = e.target.dataset.id;
+    if(id){
+        btns.forEach(function(btn){
+            btn.classList.remove("active");
+        });
+        e.target.classList.add("active");
+
+        articles.forEach(function(article){
+            article.classList.remove("active")
+
+        });
+        const element = document.getElementById(id);
+        element.classList.add("active");
+    }
+})
+</script>
+          <style>
+            
+          </style>
+        </section>
+    <section id="galeria">
+        <div class="projects" >
+            <div class="title" style="margin: 0;">
+                <h2>PRO<span>JECTS</span></h2>
               
             </div>
                 
@@ -102,89 +180,7 @@
         </div>
   
   </section>
-  <section id="about" >
   
-    
-    <div class=blog
-    >   
-                  
-    <div class="page-wrapper">
-      <div class="content clearfix">
-        <div class="main-content-wrapper">
-          <div class="main-content single">
-            <section class="section">
-              <div class="title" style="margin: 0;">
-                <h2>ABOUT US</h2>
-              
-                <p>
-                    MILL
-                </p>
-                <p>
-                  RESIDENTIAL | COMMERCIAL | INDUSTRIAL 
-                </p>
-              </div>
-        
-              <div class="about-center ">
-                <article class="about-img">
-                  <img src="images\hero-bcg.png" alt="" />
-                </article>
-                <article class="about">
-                  <!-- btn container -->
-                 
-                  <div class="about-content">
-                    <!-- single item -->
-                   
-                      <h4></h4>
-                      <p>
-                        Since 2001, Powerchip Technologies India Pvt ltd (PCT) has been committed to providing high quality  security system solutions and most importantly, personalized service to its residential, commercial &  Industrial Customers. 
-                      </p>
-                      <p>
-                        With over 1,500 professional installations, PCT has necessary expertise and resources available to design,  install, and maintain customized solutions for protecting families, homes, and businesses.
-                      </p>
-                    </div>
-                    <div class="con" id="goals">
-                      <h4>Mission</h4>
-                      <p>
-                        PCT offers a wide array of security products including complete security systems solutions, including CCTV,  video monitoring, access control, fire detection, perimeter boundary sensors and more. In addition, we are  experts in fully integrated solutions for residential and business applications. 
-        
-                      </p>
-                      <p>
-                        At PCT, we understand the importance of installing quality products and providing exemplary customer  service. That is precisely why we are a leader in security system installations in South India and have a  proven track record of complete Customer satisfaction. 
-                      </p>
-                      <p>
-                        Collective experience and exposure to various business streams and operations is the core strength of the  PCT Management team. This solid foundation is the right pedestal for many tall achievements in the years to  come. 
-                      </p>
-                    </div>
-                    <!-- end of single item -->
-                  </div>
-                </article>
-              </div>
-              <script>
-                const about = document.querySelector(".about");
-  const btns = document.querySelectorAll(".tab-btn");
-  const articles = document.querySelectorAll(".con");
-  about.addEventListener("click",function(e){
-      
-      const id = e.target.dataset.id;
-      if(id){
-          btns.forEach(function(btn){
-              btn.classList.remove("active");
-          });
-          e.target.classList.add("active");
-  
-          articles.forEach(function(article){
-              article.classList.remove("active")
-  
-          });
-          const element = document.getElementById(id);
-          element.classList.add("active");
-      }
-  })
-</script>
-            <style>
-              
-            </style>
-          </section>
           <section class="section-4" id="contact">
             <div class="title" style="margin-top:10rem;">
               <h2>CON<span>TACT</span></h2>
