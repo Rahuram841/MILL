@@ -130,13 +130,11 @@ img {
   }
   
 .bg{
-    background-image:url(ttt.webp)  ;
-    height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
+    
+  background: url(mill.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 150%;
+  background-position-x: center;
 }
 .conatiner{
     margin: 0 3vw;
@@ -240,7 +238,7 @@ main .projects-content  span{
   background: var(--clr-gold);
   color: var(--clr-white);
 }
-.card
+.car
 {
     position: relative;
     width:600px;
@@ -248,10 +246,11 @@ main .projects-content  span{
     border:none;
     display:flex;
     align-items: center;
-    border-radius:20px; 
+    padding-top: 2rem;
     transition: 0.5s ;
+    
 }
-.card .circle
+.car .circle
 {
     position:absolute;
     top:0;
@@ -263,7 +262,7 @@ main .projects-content  span{
     
     
 }
-.card .circle::before
+.car .circle::before
 {
     content:'';
     position:absolute;
@@ -276,12 +275,12 @@ main .projects-content  span{
     transition:0.5s;
     border-radius: 20px;
 }
-.card:hover .circle::before
+.car:hover .circle::before
 {
     background:#0965c3 ;
     clip-path:circle(400px at center);
 }
-.card img
+.car img
 {
   position:absolute;
   top:50%;
@@ -293,12 +292,12 @@ main .projects-content  span{
 
 
 }
-.card:hover img
+.car:hover img
 {
   left:72%;
   height: 300px;
 }
-.card .content
+.car .content
 {
     position:absolute;
     width:50%;
@@ -308,20 +307,20 @@ main .projects-content  span{
     opacity:0;
     visibility:hidden;
 }
-.card:hover .content
+.car:hover .content
 {
     left: 0;
     opacity: 1;
     visibility: visible;
 }
-.card .content h2
+.car .content h2
 {
     color:#ffff;
     text-transform:uppercase;
     font-size:2em;
     line-height: 1em;
 }
-.card .content p
+.car .content p
 {
     color: #fff;
     padding-top: 1em;
@@ -361,7 +360,7 @@ main .projects-content  span{
 }
 
 .section-center {
-  width: 90vw;
+  width: 40vw;
   margin: 0 auto;
   max-width: 1170px;
   gap: 3rem 2rem;
@@ -379,9 +378,8 @@ main .blog{
 }
 .form-container {
   margin-top: 1rem;
-  width: 75%;
-  height: 40%;
-  background-color: #c59d5f;
+  height: 100%;
+  background-color: #6a00ff;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -391,7 +389,7 @@ main .blog{
 }
 .form-img {
   width: 55rem;
-  background-color: rgb(167 154 45);
+  background-color:#FFFF00;
   padding: 5rem;
   opacity: 0.8;
   box-shadow: -3rem 3rem 4rem #aaa;
@@ -454,9 +452,16 @@ main .blog{
   border-radius: 2rem;
   box-shadow: inset 0.1rem 0.1rem 0.2rem #ddd, inset -0.1rem -0.1rem 0.2rem #ddd;
 }
-  .section-4 {
-    padding-left: 15rem;
-  }
+  
+    .section-4 {
+      width: 100%;
+      display: block;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color:#FFFF00;
+    }
+  
 .contact-form textarea {
   max-height: 15rem;
   min-height: 10rem;
@@ -478,32 +483,35 @@ main .blog{
 }
 @media (max-width:991px)
 {
-    .card
+    .car
     {
-       width: auto;
-       max-width:350px;
-       align-items: flex-start;
+       width: 400px;
+       align-items:flex-start;
     }
-    .card:hover
+    .car:hover
     {
          height:600px;
     }
-    .card .content
+    .car .content
     {
         width:100%;
         left:0;
         padding:40px;
     }
-    .card:hover img
+    .car:hover img
     {
         top:70%;
         left:50%;
         height:30 0px;
     }
+    .section-center
+    {
+      width: 100vw;
+    }
 }
 @media (max-width:420px)
 {
-    .card .content
+    .car .content
     {
        
        padding:20px;
