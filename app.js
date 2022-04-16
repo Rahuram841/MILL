@@ -2,7 +2,7 @@ const menu = [
     {
       id: 1,
       title: "video door phones",
-      category: "Club",
+      category: "Community",
       img: "./images/item-1.jpg",
       desc:`Peofessional entry security systems with IP intercom, video, and access control using Biometrics. Greet Visitors and unlock a door, Away / Stay mode settings, Emergency Alarm, Event Notice Function Store Visitor Image.` ,
     },
