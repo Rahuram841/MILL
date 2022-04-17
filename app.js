@@ -67,7 +67,7 @@ const menu = [
     {
       id: 10,
       title: "",
-      category: "Professional",
+      category: "International",
       img: "img10.jpg",
       desc: ``,
     },
